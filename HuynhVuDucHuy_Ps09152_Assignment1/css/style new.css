@@ -1,0 +1,142 @@
+.body{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: #232323;
+}
+a:hover{
+	color: #9E1212;
+}
+.box1,.box2,{float:left}
+
+.container{
+	width: 1500px;
+	margin: auto;
+}
+.wrapper{
+	margin-top: -10px;
+	width: 1500px; 
+	height: 700px;
+	overflow: hidden;
+}
+.middle{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.navigation{
+	top: 970px;
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+}
+.bar{
+	width: 30px;
+	height: 3px;
+	border: 2px solid #fff;
+	margin: 6px;
+	cursor: pointer;
+	transition: 0.4s;
+}
+.bar:hover{
+	background: lightgray;
+}
+input[name="r"]{
+	position: absolute;
+	visibility: hidden;
+}
+.slides{
+	width: 500%;
+	height: 100%;
+	display: flex; 
+}
+.slide{
+	width: 20%;
+	transition: 0.6s;
+}
+.slide>img{
+	width: 100%;
+	height: 100%;
+}
+#r1:checked ~ .s1{
+	margin-left: 0;
+}
+#r2:checked ~ .s1{
+	margin-left: -20%;
+}
+#r3:checked ~ .s1{
+	margin-left: -40%;
+}
+
+/* Menu */
+.clear{
+	clear: both;
+}
+.Menu{
+	margin-top: 0px;
+	margin-bottom: 30px;
+	text-align: center;
+	font-size: 18px;
+	background-color: #EEEEEE;
+	box-shadow:0px 3px 0px #CCCCCC;
+}
+.Menu li{
+	display: inline-block;
+	padding: 10px 20px;
+	text-transform: uppercase;
+}
+.column1{
+        float: left;
+        height: auto;
+        padding: 10px;
+    }
+
+    .column1 .Sanpham {
+        max-width: 1000px;
+        padding: 10px;
+        margin-top: 10px;
+        box-shadow: 1px 1px 1px gray;
+		display: inline-block;
+  		-webkit-transition-duration: 0.3s;
+  		transition-duration: 0.3s;
+  		-webkit-transition-property: -webkit-transform;
+  		transition-property: transform;
+  		-webkit-transform: translateZ(0);
+  		-ms-transform: translateZ(0);
+  		transform: translateZ(0);
+  		box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    }
+
+    .column1 .Gia {
+        color: brown;
+        font-weight: bold;
+        font-size: small;
+        text-align: center;
+    }
+
+    .column1 .Ten {
+        text-align: center;
+    }
+.Sanpham:hover{
+	
+	-webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.Sanpham a{
+	text-decoration: none;
+}
+.Sanpham a:hover{
+	font-weight: bolder;
+}
+.column1 .Sanpham:hover {
+        box-shadow: 1px 3px 3px 1px black;
+}
+.quangcao{
+	float: left;
+}
